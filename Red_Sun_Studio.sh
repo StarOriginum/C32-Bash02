@@ -37,8 +37,8 @@ effacerListe() {
   echo "Ceci videra la liste"
 }
 
-genererPage(){
-
+genererPageHTML(){
+    
 }
 
 quitterProgramme(){
