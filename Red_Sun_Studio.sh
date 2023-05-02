@@ -20,6 +20,21 @@
 # }
 
 # …
+afficherMenu(){
+    echo "
+               x
+     .-. _______|
+     |=|/     /  \\
+     | |_____|_""_|
+     |_|_[X]_|____|
+"
+    echo "[A] -	Ajouter un produit"
+    echo "[S] -	Supprimer un produit"
+    echo "[E] -	Effacer la liste de produits"
+    echo "[G] -	Générer la page web produits.html"
+    echo "[Q] -	Quitter le programme"
+    echo "Entrez votre choix: " choix
+}
 
 # N’oubliez pas vos git add, commit, pull/push!
 
