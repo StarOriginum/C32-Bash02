@@ -42,10 +42,6 @@ genererPageHTML(){
 
 quitterProgramme(){
 
-while [[ $choix != q ]]
-do
-   afficherMenu
-   
 }
 
 # N’oubliez pas vos git add, commit, pull/push!
