@@ -28,9 +28,9 @@ ajouterProduit() {
   echo "Ceci ajoutera un produit"
 }
 
-# supprimerProduit(){
+supprimerProduit(){
 
-# }
+}
 
 effacerListe() {
   echo "Ceci videra la liste"
@@ -48,7 +48,7 @@ cat << _EOF_ > produits.html
 _EOF_
 }
 
-# quitterProgramme(){}
+quitterProgramme(){
 
 while [[ $choix != q ]]
 do
@@ -66,9 +66,9 @@ done
 # Étape 2 : Ajouter l’option pour quitter le programme
 # Lorsque la fonction afficherMenu est terminée, faire une boucle qui affiche le menu et demande le choix de l’utilisateur.
 
-# while [[ $choix != q ]]
-# do
-#    afficherMenu
+while [[ $choix != q ]]
+do
+   afficherMenu
    #read -p "
 
 
@@ -101,6 +101,4 @@ listeProduits(){
     done
 }
 
-while
-
-# listeProduits
+listeProduits
