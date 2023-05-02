@@ -46,7 +46,7 @@ while [[ $choix != q ]]
 do
     clear
    afficherMenu
-   
+done
 }
 
 # N’oubliez pas vos git add, commit, pull/push!
