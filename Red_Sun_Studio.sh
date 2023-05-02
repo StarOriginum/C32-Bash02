@@ -24,7 +24,13 @@
 # N’oubliez pas vos git add, commit, pull/push!
 
 # Étape 2 : Ajouter l’option pour quitter le programme
-# Lorsque la fonction afficherMenu est terminée, faire une boucle qui affiche le menu et demande le choix de l’utilisateur. 
+# Lorsque la fonction afficherMenu est terminée, faire une boucle qui affiche le menu et demande le choix de l’utilisateur.
+
+while [[ $choix != q ]]
+do
+   afficherMenu
+   read -p "
+
 
 # Si l’utilisateur entre « q », alors le programme quitte la boucle et le programme s’arrête.
 
