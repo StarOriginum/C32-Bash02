@@ -54,6 +54,10 @@ while [[ $choix != q ]]
 do
    afficherMenu
    read -p "Votre choix" choix
+   if test $choix = G
+   then
+    genererHTML
+
 done
 
 
@@ -100,4 +104,3 @@ listeProduits(){
 while
 
 # listeProduits
-genererHTML
