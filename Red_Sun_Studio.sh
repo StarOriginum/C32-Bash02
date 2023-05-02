@@ -53,6 +53,7 @@ _EOF_
 while [[ $choix != q ]]
 do
    afficherMenu
+   read -p "Votre choix" choix
 done
 
 
