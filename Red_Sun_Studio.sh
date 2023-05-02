@@ -37,14 +37,21 @@ effacerListe() {
 }
 
 genererPageHTML(){
-
+cat << _EOF_ > produits.html
+    <html>
+        <body>
+            <ul>
+                $(listeProduits)
+            </ul>
+        </body>
+    </html>
+_EOF_
 }
 
 quitterProgramme(){
 
 while [[ $choix != q ]]
 do
-    clear
    afficherMenu
 done
 }
@@ -54,7 +61,10 @@ done
 # Étape 2 : Ajouter l’option pour quitter le programme
 # Lorsque la fonction afficherMenu est terminée, faire une boucle qui affiche le menu et demande le choix de l’utilisateur.
 
-
+while [[ $choix != q ]]
+do
+   afficherMenu
+   #read -p "
 
 
 # Si l’utilisateur entre « q », alors le programme quitte la boucle et le programme s’arrête.
@@ -67,6 +77,7 @@ done
 # Si l’utilisateur entre « a », alors le programme demande à l’utilisateur le nom d’un produit (en un mot). 
 
 # Ce nouveau produit est écrit dans un fichier texte (listeProduits.txt). Si le fichier existe, alors il écrit ce nouveau produit à la fin du fichier.
+
 ecrire(){
     echo $1 >> listeProduits.txt
 }
@@ -81,8 +92,10 @@ listeProduits(){
 
     for ligne in $liste
     do 
-        echo $ligne
+        echo "<li>$ligne</li>"
     done
 }
+
+while
 
 listeProduits
