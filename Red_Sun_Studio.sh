@@ -53,8 +53,8 @@ quitterProgramme(){}
 while [[ $choix != q ]]
 do
    afficherMenu
-   
-
+done
+}
 
 # N’oubliez pas vos git add, commit, pull/push!
 
