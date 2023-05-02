@@ -61,9 +61,9 @@ done
 # Étape 2 : Ajouter l’option pour quitter le programme
 # Lorsque la fonction afficherMenu est terminée, faire une boucle qui affiche le menu et demande le choix de l’utilisateur.
 
-while [[ $choix != q ]]
-do
-   afficherMenu
+# while [[ $choix != q ]]
+# do
+#    afficherMenu
    #read -p "
 
 
