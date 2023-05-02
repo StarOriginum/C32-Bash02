@@ -22,7 +22,6 @@ afficherMenu(){
     echo "[E] -	Effacer la liste de produits"
     echo "[G] -	Générer la page web produits.html"
     echo "[Q] -	Quitter le programme"
-    read -p "Entrez votre choix: " choix
 }
 
 ajouterProduit() {
