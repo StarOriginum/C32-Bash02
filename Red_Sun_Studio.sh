@@ -22,7 +22,6 @@ afficherMenu(){
     echo "[E] -	Effacer la liste de produits"
     echo "[G] -	Générer la page web produits.html"
     echo "[Q] -	Quitter le programme"
-    echo "Entrez votre choix: " choix
 }
 
 ajouterProduit() {
@@ -38,7 +37,7 @@ effacerListe() {
 }
 
 genererPageHTML(){
-    
+
 }
 
 quitterProgramme(){
