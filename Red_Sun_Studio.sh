@@ -37,8 +37,8 @@ effacerListe() {
   echo "Ceci videra la liste"
 }
 
-genererPage(){
-
+genererPageHTML(){
+    
 }
 
 quitterProgramme(){
@@ -67,28 +67,22 @@ do
 # Si l’utilisateur entre « a », alors le programme demande à l’utilisateur le nom d’un produit (en un mot). 
 
 # Ce nouveau produit est écrit dans un fichier texte (listeProduits.txt). Si le fichier existe, alors il écrit ce nouveau produit à la fin du fichier.
+ecrire(){
+    echo $1 >> listeProduits.txt
+}
 
 # Étape 5 : Modifier genererHTML()
 # Une liste de produits étant disponible, il s’agit de modifier la fonction genererHTML en y ajoutant la liste de produits. 
 
 # Créez-vous une fonction listeProduits. Cette fonction fera un echo pour chaque ligne du fichier listeProduits.txt (echo "<li>$ligne</li>"). 
 
-# Étape 6 : Créer une fonction effacerProduits()
-# Si l’utilisateur entre la lettre « v », alors la fonction effacerProduit est appelé. Celle-ci supprimera le fichier listeProduits.txt.
+listeProduits(){
+    liste=`cat listeProduits.txt`
 
-# Étape 7 : Créer une fonction supprimerProduit()
-# Cette fonction est la plus délicate. Voici son fonctionnement.
+    for ligne in $liste
+    do 
+        echo $ligne
+    done
+}
 
-# Lorsque l’utilisateur entre la lettre « s », la fonction supprimerProduit() est appelée.
-
-# Cette fonction lit le fichier listeProduits.txt et pour chaque ligne, elle en fait un « echo », préfixé de son numéro de ligne (voir impression écran page 3).
-
-# L’usager est invité à écrire le numéro de la ligne qu’il veut supprimer. 
-
-# S’assurer d’avoir les lignes du fichier listeProduits.txt dans une variable. Ensuite, supprimer le fichier.
- 
-# Finalement, grâce à la variable contenant les lignes du fichier listeProduits, on fait une boucle :
-
-# Pour chaque ligne
-# 	Si son numéro de ligne est différent du numéro entré par l’usager
-# 		On l’insère dans listeProduits.txt
+listeProduits
