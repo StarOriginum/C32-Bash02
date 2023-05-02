@@ -37,7 +37,15 @@ effacerListe() {
 }
 
 genererPageHTML(){
-
+cat << _EOF_ > produits.html
+    <html>
+        <body>
+            <ul>
+                $(listeProduits)
+            </ul>
+        </body>
+    </html>
+_EOF_
 }
 
 quitterProgramme(){
