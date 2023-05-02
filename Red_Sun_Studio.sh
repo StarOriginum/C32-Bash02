@@ -8,23 +8,53 @@
 
 # Vous devriez également écrire l’ensemble des fonctions de votre programme (ex : genererHTML()), mais les laisser pratiquement vide. Ainsi, chaque personne de l’équipe pourra travailler sur une fonction différente sans qu’il y ait de conflits Git.
 
-# Exemple :
-# …
 
-# viderListe() {
-#   echo "Ceci videra la liste"
-# }
+afficherMenu(){
+    echo "
+               x
+     .-. _______|
+     |=|/     /  \\
+     | |_____|_""_|
+     |_|_[X]_|____|
+"
+    echo "[A] -	Ajouter un produit"
+    echo "[S] -	Supprimer un produit"
+    echo "[E] -	Effacer la liste de produits"
+    echo "[G] -	Générer la page web produits.html"
+    echo "[Q] -	Quitter le programme"
+    echo "Entrez votre choix: " choix
+}
 
-# ajouterProduit() {
-#   echo "Ceci ajoutera un produit"
-# }
+ajouterProduit() {
+  echo "Ceci ajoutera un produit"
+}
 
-# …
+supprimerProduit(){
+
+}
+
+effacerListe() {
+  echo "Ceci videra la liste"
+}
+
+genererPage(){
+
+}
+
+quitterProgramme(){
+
+}
 
 # N’oubliez pas vos git add, commit, pull/push!
 
 # Étape 2 : Ajouter l’option pour quitter le programme
-# Lorsque la fonction afficherMenu est terminée, faire une boucle qui affiche le menu et demande le choix de l’utilisateur. 
+# Lorsque la fonction afficherMenu est terminée, faire une boucle qui affiche le menu et demande le choix de l’utilisateur.
+
+while [[ $choix != q ]]
+do
+   afficherMenu
+   read -p "
+
 
 # Si l’utilisateur entre « q », alors le programme quitte la boucle et le programme s’arrête.
 
