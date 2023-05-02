@@ -45,6 +45,7 @@ quitterProgramme(){
 
 while [[ $choix != q ]]
 do
+    clear
    afficherMenu
    
 }
