@@ -28,9 +28,9 @@ ajouterProduit() {
   echo "Ceci ajoutera un produit"
 }
 
-supprimerProduit(){
+# supprimerProduit(){
 
-}
+# }
 
 effacerListe() {
   echo "Ceci videra la liste"
@@ -48,13 +48,13 @@ cat << _EOF_ > produits.html
 _EOF_
 }
 
-quitterProgramme(){
+quitterProgramme(){}
 
 while [[ $choix != q ]]
 do
    afficherMenu
    
-}
+
 
 # N’oubliez pas vos git add, commit, pull/push!
 
@@ -98,4 +98,5 @@ listeProduits(){
 
 while
 
-listeProduits
+# listeProduits
+genererHTML
